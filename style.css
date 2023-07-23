@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.858);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    ;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    color: gold;
+    text-align: center;
+}
+
+#desc {
+    width: 90%;
+    text-align: center;
+    height:fit-content;
+    word-wrap: break-word;
+}
+
+.popup {
+    position: absolute;
+    top: 30px;
+    width: 350px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.892);
+    backdrop-filter: blur(2px);
+    color: black;
+    font-family: arial;
+    border-radius: 10px;
+    border: .5px solid green;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.432);
+    display: none;
+}
+
+.popup-heading {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.popup-heading,
+.popup-btn {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.popup-desc {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.popup-btn p {
+    padding: 7px 40px;
+    background: red;
+    border-radius: 50px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    ;
+    cursor: pointer;
+    opacity: .85;
+}
+
+.popup-btn p:hover {
+    opacity: 1;
+}
+
+#accept-btn {
+    background: green;
+}
+
+
+@media screen and (max-width:400px) {
+    body {
+        height: fit-content;
+        min-height: 100vh;
+        padding: 10px 0;
+    }
+
+    .popup {
+        width: 98%;
+        height: fit-content;
+    }
+
+    .popup-desc {
+        height: fit-content;
+        padding: 5px 0;
+    }
+
+    .popup-heading,
+    .popup-btn {
+        gap: 10px;
+    }
+
+    .popup-btn p {
+        padding: 7px 30px;
+    }
+}
+
+@media screen and (max-width:200px) {
+    .logo h1{
+        width:98%;
+        font-size: 20px;;
+
+    }
+    .popup-desc {
+        font-size: 15px;
+    }
+
+    .popup-heading {
+        font-size: 18px;
+    }
+
+    .popup-btn {
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .popup-btn p {
+        padding: 7px 0;
+        width: 98%;
+    }
+}
+@media screen and (max-width:100px) {
+    .logo h1{
+        font-size: 11px;;
+
+    }
+    .logo p{
+        font-size: 6px;;
+
+    }
+    .popup-heading {
+        font-size: 10px;
+    }
+    .popup-desc{
+        font-size: 8px;
+    }
+    .popup-btn p {
+        padding: 7px 0;
+        font-size: 10px;;
+    }
+}

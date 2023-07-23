@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Popup - CodeWord</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <h1> CodeWord</h1>
+        <p> For Better Future </p>
+    </div>
+
+    <p id="desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius expedita consequuntur error.
+        Exercitationem nobis dicta eum architecto saepe totam deserunt odit enim a laborum voluptas eius, vero magni
+        cupiditate unde alias facilis aperiam natus? Dicta, inventore assumenda! Id eius perspiciatis maiores possimus
+        quo vitae repudiandae, dicta molestiae? Officiis aliquid aspernatur tempora at ab porro, maiores vitae aperiam,
+        mollitia quis numquam provident autem excepturi hic eum illo velit quidem saepe. Eveniet rem nam beatae, dicta
+        laudantium a maxime. Illum totam facere natus, perferendis tempore, ex mollitia harum perspiciatis sapiente
+        voluptatem autem repudiandae quisquam quasi tempora, saepe architecto suscipit eos asperiores ab expedita nisi
+        omnis? Quam non veritatis tempore, quas harum, nisi aperiam quod sunt laboriosam, modi mollitia culpa porro
+        officia inventore aliquid sequi adipisci? Veritatis autem, voluptatem cum rerum nisi quas ea dolorem alias,
+        optio recusandae fugit? Accusamus quis repellendus autem dolores tempore ratione dignissimos error quod,
+        molestias facere cupiditate aspernatur eius perferendis unde maxime aut illum! Minus, sequi? Autem minima iure
+        provident quasi explicabo laudantium in alias sapiente harum maiores. Impedit delectus rem fugit incidunt esse
+        sunt est sapiente nesciunt dolorum. Exercitationem repudiandae labore, porro officiis ipsam mollitia,
+        reprehenderit alias impedit eius dolorum suscipit, fugit enim culpa facere iure! Deleniti?</p>
+
+
+    <!--  Popup  -->
+    <div class="popup" id="popup-box">
+        <div class="popup-heading">CodeWord</div>
+        <div class="popup-desc"> We Are Here To Make Community Better, We Will Do Whatever We Can To Make Better. Do you
+            Like Our Services Or Not ?</div>
+        <div class="popup-btn">
+            <p id="reject-btn" onclick="rejectPopup()"> No </p>
+            <p id="accept-btn" onclick="acceptPopup()"> Yes </p>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.querySelector("#popup-box");
+        window.addEventListener("load", ()=>{
+            setTimeout(()=>{
+                popup.style.display = "block"
+            },2000)
+        })
+
+        function acceptPopup(){
+            popup.style.display = "none";
+            alert("Thanks For Your Support")
+        }
+        function rejectPopup(){
+            popup.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
